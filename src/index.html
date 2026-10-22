@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pac-Man: Phase Shift</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <header id="ui-header">
+            <div class="stat-box">
+                <span class="label">PUNTOS</span>
+                <span id="score-display">0000</span>
+            </div>
+            <div class="stat-box">
+                <span class="label">FASE (SHIFT)</span>
+                <div class="bar-wrapper">
+                    <div id="phase-bar"></div>
+                </div>
+            </div>
+            <div class="stat-box">
+                <span class="label">VIDAS</span>
+                <span id="lives-display">3</span>
+            </div>
+        </header>
+
+        <canvas id="gameCanvas" width="448" height="496"></canvas>
+
+        <footer id="ui-footer">
+            <p>Controles: Flechas / WASD para mover. Espacio o Shift para activar Cambio de Fase.</p>
+        </footer>
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
